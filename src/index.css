@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* index.css */
+
+@layer components {
+    .underline-animation {
+      position: relative;
+      display: inline-block;
+    }
+  
+    .underline-animation::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      background-color: currentColor;
+      transition: width 0.5s ease, transform 0.5s ease;
+    }
+  
+    .underline-animation:hover::after {
+      width: 100%;
+      right: 0;
+      left: 0; /* Ensure the underline is fully visible */
+      transform: translateX(0); /* Move the underline to its final position */
+    }
+  }
