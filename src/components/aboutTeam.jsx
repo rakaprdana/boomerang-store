@@ -2,7 +2,7 @@ import Team from "../assets/gambar1.jfif";
 const AboutTeam = () => {
   return (
     <>
-      <section className="bg-slate-50 py-12">
+      <section className="bg-slate-50 py-24">
         <h2 className="text-4xl font-bold text-center pb-12">About Our Team</h2>
         <div className="flex justify-between">
           <p className="flex items-center mx-12 text-xl text-gray-600">

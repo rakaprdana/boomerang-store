@@ -20,7 +20,7 @@ const ProductCard = () => {
             />
             <h2 className="font-bold">{product.title}</h2>
             <p className="pb-8">${product.price}</p>
-            <Button label="Add to cart" />
+            <Button label="Add to cart" variant="primary" />
           </div>
         ))}
       </div>

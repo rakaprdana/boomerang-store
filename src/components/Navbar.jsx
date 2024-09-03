@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assets/logo-store.jpg";
 import "boxicons";
 
 function Navbar() {
@@ -7,9 +8,12 @@ function Navbar() {
     <>
       <nav className="bg-green-600 p-4 w-full text-white shadow-md fixed rounded-b-md">
         <div className="container mx-auto font-sans flex items-center justify-between">
-          <Link to="/" className="text-xl font-bold">
-            Boomerang Store
-          </Link>
+          <div className="flex flex-row items-center space-x-4">
+            <Link to="/" className="text-xl font-bold">
+              Boomerang Store
+            </Link>
+            <img src={Logo} alt="Logo Store" className="w-8 rounded-full" />
+          </div>
           <div className="flex justify-center items-center mx-4 space-x-4">
             <Link to="/" className="underline-animation">
               Home
