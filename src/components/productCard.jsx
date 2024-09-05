@@ -3,6 +3,7 @@ import Button from "./Button";
 
 const ProductCard = () => {
   const [product, setProduct] = useState([]);
+  const [cart, setCart] = useState([]);
   useEffect(() => {
     fetch("https://fakestoreapi.com/products/")
       .then((res) => res.json())
@@ -12,7 +13,10 @@ const ProductCard = () => {
     <>
       <div className="grid grid-cols-4 mx-4 gap-4">
         {product.map((product) => (
-          <div key={product.id} className="bg-white p-4 rounded-xl shadow-sm">
+          <div
+            key={product.id}
+            className="bg-white p-4 rounded-xl shadow-sm flex flex-col "
+          >
             <img
               src={product.image}
               alt={product.title}

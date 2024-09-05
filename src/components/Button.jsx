@@ -1,4 +1,4 @@
-const Button = ({ label, variant }) => {
+const Button = ({ label, variant, onClick }) => {
   const primaryColor =
     "bg-green-600 text-slate-50 p-2 text-sm rounded-lg hover:bg-green-500 hover:text-white hover:-translate-y-2 duration-1000";
   const secondaryColor =
@@ -7,7 +7,9 @@ const Button = ({ label, variant }) => {
   return (
     <>
       <div>
-        <button className={buttonClass}>{label}</button>
+        <button className={buttonClass} onClick={onClick}>
+          {label}
+        </button>
       </div>
     </>
   );
