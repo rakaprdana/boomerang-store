@@ -15,7 +15,7 @@ function Navbar() {
             <img src={Logo} alt="Logo Store" className="w-8 rounded-full" />
           </div>
           <div className="flex justify-center items-center mx-4 space-x-4">
-            <Link to="/home" className="underline-animation">
+            <Link to="/" className="underline-animation">
               Home
             </Link>
             <Link to="/products" className="underline-animation">
