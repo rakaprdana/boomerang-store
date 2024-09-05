@@ -9,7 +9,7 @@ import LandingPage from "./pages/LandingPage";
 const App = () => {
   return (
     <Router>
-      <div className="w-screen bg-green-100 text-gray-800">
+      <div className="h-screen bg-green-100 text-gray-800">
         <Navbar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
